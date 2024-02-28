@@ -1,0 +1,15 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+token_locked = "DB8KUsBQczCSyYedg5f5wPEz88J1V4YbN3BGAzFFCHvH"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+wallet = "./tests/payer-wallet.json"
+cluster ="https://little-practical-wildflower.solana-devnet.discover.quiknode.pro/b33c1731ef24950ad5a92445bc1133e16e4271ed/"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
